@@ -1,5 +1,5 @@
 # ***********************
-# uncomment the line(s) to verify output
+# (Ctrl+/) comment/uncomment line(s) to verify output
 # res is assigned the value of the problems extracted from quizes problems for output
 # ***********************
 
@@ -165,6 +165,6 @@ True
 
 True
 '''
-res = "Programming is fun".startswith('Program')
+# res = "Programming is fun".startswith('Program')
 
 print(res)
