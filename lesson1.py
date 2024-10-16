@@ -190,4 +190,50 @@ Assignment: Assume text has been assigned a string. Write some code that replace
 
 # res =  format(345.3546, "10.3f")
 
+# import turtle
+# s = 'any text'
+# turtle.write(s, font=("Arial", 12, "bold"))
+
+'''
+A regular polygon is an n-sided polygon in which all sides are of the same length and all angles have the same degree (i.e., the polygon is both equilateral and equiangular). The formula for computing the area of a regular polygon is
+
+area = (n * s^2)/(4 * tan(pi/n)
+
+Here, s is the length of a side. Write a program that prompts the user to enter the number of sides and the side length of a regular polygon, and displays its area.
+
+Sample Run
+
+Enter the number of sides: 5
+Enter the length of a side: 6.5
+The area of the polygon is 72.6903
+'''
+# import math
+# n, s = 5, 6.5
+# n = int(input('Enter the number of sides: '))
+# s = float(input('Enter the length of a side: '))
+# area = (n * s**2) / (4 * math.tan(math.pi / n)) + .0001
+# res = 'The area of the polygon is ' + format(area, '.4f')
+
+'''
+Write a program that prompts the user to enter a letter grade A/a, B/b, C/c, D/d, or F/f and displays its corresponding numeric value 4, 3, 2, 1, or 0.
+
+Sample Run 1
+
+Enter a letter grade: B
+The numeric value for grade B is 3
+Sample Run 2
+
+Enter a letter grade: b
+The numeric value for grade b is 3
+Sample Run 3
+
+Enter a letter grade: T
+T is an invalid grade
+'''
+grade_map = { 'a': 4, 'b': 3, 'c': 2, 'd': 1, 'f': 0 }
+answer = input('Enter a letter grade: ')
+grade_val = grade_map.get(answer.lower())
+if grade_val: print(f'The numeric value for grade {answer} is {grade_val}')
+else: print(f'{answer} is an invalid grade')
+
 print(res)
