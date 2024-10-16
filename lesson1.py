@@ -167,4 +167,27 @@ True
 '''
 # res = "Programming is fun".startswith('Program')
 
+'''
+Assignment: Usernames has the format <surname>.<name>#<unique number>. 
+Assume the username is assigned to username, and its casing is random (letters may be upper- or lower-case without a pattern). Write some code that assigns to fullName the string with <name> <surname>, both name and surname should be capitalized. Capitalized means the first letter is in uppercase.
+'''
+# username = "Jhon.Doe#77"
+# surname, name = username.split('.')
+# name = name[:name.find('#')]
+# res = fullName = (name + ' ' + surname).title()
+
+'''
+Assignment: Assume text has been assigned a string. Write some code that replaces all vowels (a, e, i, o, u) in text with i and assigns the result to text. Assume vowels are always lowercase.
+'''
+# text = 'aeiou'
+# res = text = text.replace("a","i").replace("e","i").replace("i","i").replace("o","i").replace("u","i")
+
+# is this valid?
+# s = "Welcome"
+# s[1] = 'r'
+
+# res = "\t\tWelcome\n".strip()
+
+# res =  format(345.3546, "10.3f")
+
 print(res)
